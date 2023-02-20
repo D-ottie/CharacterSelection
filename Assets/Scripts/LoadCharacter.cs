@@ -12,7 +12,7 @@ public class LoadCharacter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int PREFS_SELECTED_CHARACTER = PlayerPrefs.GetInt("selectedCharacter");
+        int PREFS_SELECTED_CHARACTER = PlayerPrefs.GetInt("Selected Character");
         GameObject player = Instantiate(characterPrefabs[PREFS_SELECTED_CHARACTER], spawnPos.position, spawnPos.rotation);
 
     }
